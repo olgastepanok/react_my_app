@@ -1,4 +1,4 @@
-import meerkat from "../../assets/img/meerkat.jpg";
+import meerkat from "../../../assets/img/meerkat.jpg";
 const MyComponentWithImg = (props)=> {
     return (
     <div>
