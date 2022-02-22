@@ -7,6 +7,8 @@ import MyComponentWithImg from './components/homework1/MyComponentWithImg';
 import MyListComponentWithUuid from './components/homework3/MyListComponentWithUuid';
 import MyListComponentAntdUnique from './components/homework3/MyListComponentAntdUnique';
 import MyCounterComponent from './components/homework3/MyCounterComponent';
+import LifeCycleComponent from './components/homework4/LifeCycleComponent';
+import LanguageComponent from './components/homework4/LanguageComponent';
 
 function App() {
     const property = true;
@@ -33,6 +35,11 @@ function App() {
 
   return (
     <div className="App">
+        <div className="HomeWork4">
+            <h1>Homework 4</h1>
+            <LifeCycleComponent/>
+            <LanguageComponent/>
+        </div>
         <div className="HomeWork1">
             <h1>Homework 1</h1>
             <MyComponent1 name="MyComponent1"/>
