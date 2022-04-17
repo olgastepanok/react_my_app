@@ -9,6 +9,8 @@ import MyListComponentAntdUnique from './components/homework3/MyListComponentAnt
 import MyCounterComponent from './components/homework3/MyCounterComponent';
 import LifeCycleComponent from './components/homework4/LifeCycleComponent';
 import LanguageComponent from './components/homework4/LanguageComponent';
+import MyFormPart1 from './components/homework5/MyFormPart1';
+import MyFormPart2 from './components/homework5/MyFormPart2';
 
 function App() {
     const property = true;
@@ -35,6 +37,11 @@ function App() {
 
   return (
     <div className="App">
+        <div className="HomeWork5">
+            <h1>Homework 5</h1>
+            <MyFormPart1/>
+            <MyFormPart2/>
+        </div>
         <div className="HomeWork4">
             <h1>Homework 4</h1>
             <LifeCycleComponent/>
