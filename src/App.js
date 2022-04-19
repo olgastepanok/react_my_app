@@ -11,6 +11,7 @@ import LifeCycleComponent from './components/homework4/LifeCycleComponent';
 import LanguageComponent from './components/homework4/LanguageComponent';
 import MyFormPart1 from './components/homework5/MyFormPart1';
 import MyFormPart2 from './components/homework5/MyFormPart2';
+import MyStyledForm from './components/homework6/MyStyledForm';
 
 function App() {
     const property = true;
@@ -37,6 +38,10 @@ function App() {
 
   return (
     <div className="App">
+        <div className="HomeWork6">
+            <h1>Homework 6</h1>
+            <MyStyledForm/>
+        </div>
         <div className="HomeWork5">
             <h1>Homework 5</h1>
             <MyFormPart1/>

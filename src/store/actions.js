@@ -48,3 +48,21 @@ export const changeNumberTwoAction = (obj) => {
                   convertedValue: obj.convertedValue,},
     });
 };
+export const changeStyledInputAction = (value) => {
+    return({
+        type:"CHANGE_STYLED_INPUT",
+        payload: value,
+    });
+};
+export const changeStyledInputValidAction = (value) => {
+    return({
+        type:"CHANGE_STYLED_INPUT_VALID",
+        payload: value,
+    });
+};
+export const sendStyledFormAction = () => {
+    console.log("submit success");
+    return({
+        type:"CHANGE_STYLED_INPUT",
+    });
+};

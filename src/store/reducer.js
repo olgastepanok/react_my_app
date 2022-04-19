@@ -12,6 +12,8 @@ const defaultState = {
     numberTwo:0,
     convertedNumberOne:null,
     convertedNumberTwo:null,
+    styledFormInput:"",
+    isValidStyledFormInput:undefined,
 };
 
 export const reducer = (state = defaultState, action) => {
@@ -57,6 +59,18 @@ export const reducer = (state = defaultState, action) => {
     case "CHANGE_NUMBER_TWO":
         {
             return {...state, numberTwo:action.payload.value, convertedNumberTwo:action.payload.convertedValue,};
+        }
+    case "CHANGE_STYLED_INPUT":
+        {
+            return {...state, styledFormInput:action.payload,};
+        }
+    case "CHANGE_STYLED_INPUT_VALID":
+        {
+            return {...state, isValidStyledFormInput:action.payload,};
+        }
+    case "SEND_STYLED_FORM":
+        {
+            return state;
         }
     default:
         return state;
