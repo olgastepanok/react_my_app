@@ -2,6 +2,7 @@ import React from "react";
 import {connect} from 'react-redux';
 import {changeStyledInputAction, changeStyledInputValidAction, sendStyledFormAction} from '../../../store/actions';
 import styles from '../Styles.module.scss'
+
 class MyStyledForm extends React.Component{
     constructor(props) {
         super(props);

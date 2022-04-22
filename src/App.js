@@ -12,6 +12,7 @@ import LanguageComponent from './components/homework4/LanguageComponent';
 import MyFormPart1 from './components/homework5/MyFormPart1';
 import MyFormPart2 from './components/homework5/MyFormPart2';
 import MyStyledForm from './components/homework6/MyStyledForm';
+import MyToDoList from "./components/homework7/MyToDoList";
 
 function App() {
     const property = true;
@@ -38,6 +39,10 @@ function App() {
 
   return (
     <div className="App">
+        <div className="HomeWork7">
+            <h1>Homework 7</h1>
+            <MyToDoList/>
+        </div>
         <div className="HomeWork6">
             <h1>Homework 6</h1>
             <MyStyledForm/>
