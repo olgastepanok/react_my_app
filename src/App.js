@@ -19,6 +19,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
+
 const routes = [
     {
         path: "/",
@@ -80,6 +81,7 @@ const routes = [
             ]
     },
 ];
+
 function App() {
   return (
       <Router>
@@ -120,6 +122,7 @@ function App() {
       </Router>
   );
 }
+
 function RouteWithSubRoutes(route) {
     return (
         <Route
@@ -131,11 +134,13 @@ function RouteWithSubRoutes(route) {
         />
     );
 }
+
 function HomePage() {
     return <div className="HomePage">
         <h1>Home Page</h1>
     </div>;
 }
+
 function Homework1() {
     return <div className="HomeWork1">
         <h1>Homework 1</h1>
@@ -153,6 +158,7 @@ function Homework2() {
         <MyComponent4 name="Max" property="false"/>
     </div>;
 }
+
 function Homework3() {
     const items = [
         {
@@ -181,6 +187,7 @@ function Homework3() {
         <MyCounterComponent/>
     </div>;
 }
+
 function Homework4() {
     return <div className="HomeWork4">
         <h1>Homework 4</h1>
@@ -188,6 +195,7 @@ function Homework4() {
         <LanguageComponent/>
     </div>;
 }
+
 function Homework5() {
     return <div className="HomeWork5">
         <h1>Homework 5</h1>
@@ -195,18 +203,21 @@ function Homework5() {
         <MyFormPart2/>
     </div>;
 }
+
 function Homework6() {
     return <div className="HomeWork6">
         <h1>Homework 6</h1>
         <MyStyledForm/>
     </div>;
 }
+
 function Homework7() {
     return <div className="HomeWork7">
         <h1>Homework 7</h1>
         <MyToDoList/>
     </div>;
 }
+
 function Homework8({routes}) {
     return <div className="HomeWork8">
         <ul>
@@ -224,6 +235,7 @@ function Homework8({routes}) {
         </Switch>
     </div>;
 }
+
 function Link1() {
     return <h3>Link 1</h3>;
 }
@@ -231,4 +243,5 @@ function Link1() {
 function Link2() {
     return <h3>Link 2</h3>;
 }
+
 export default App;
