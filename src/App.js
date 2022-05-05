@@ -24,6 +24,7 @@ import Calculator from "./components/homework9/Calculator";
 import ErrorBoundary from "./components/homework9/ErrorBoundary";
 import ComponentWithContext from "./components/homework10/ComponentWithContext";
 import ComponentWithCommonState from "./components/homework11/ComponentWithCommonState";
+ import {Clock} from "./components/homework12/Clock/Clock";
 
 const routes = [
   {
@@ -87,6 +88,10 @@ const routes = [
     path: "/homework11",
     component: Homework11
   },
+  {
+    path: "/homework12",
+    component: Homework12
+  },
 ];
 
 function App() {
@@ -126,6 +131,9 @@ function App() {
           </li>
           <li>
             <Link to="/homework11">Homework 11</Link>
+          </li>
+          <li>
+            <Link to="/homework12">Homework 12</Link>
           </li>
         </ul>
 
@@ -274,6 +282,13 @@ function Homework11() {
   return <div className="HomeWork11">
     <h1>Homework 11</h1>
     <ComponentWithCommonState/>
+  </div>;
+}
+
+function Homework12() {
+  return <div className="HomeWork12">
+    <h1>Homework 12</h1>
+    <Clock/>
   </div>;
 }
 
